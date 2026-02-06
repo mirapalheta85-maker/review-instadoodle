@@ -1,86 +1,125 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>What Is InstaDoodle?</title>
-  <meta name="description" content="Informational overview of InstaDoodle features and who it is designed for." />
-  <style>
-    :root { color-scheme: light; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      background: #f6f7f9;
-      color: #111;
-    }
-    .wrap {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 24px 16px 56px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 14px;
-      padding: 28px 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.06);
-    }
-    h1 { margin: 0 0 10px; font-size: 30px; }
-    h2 { margin: 22px 0 10px; font-size: 20px; }
-    p { margin: 10px 0; }
-    ul { margin: 10px 0 0 18px; }
-    .cta {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 14px 18px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 700;
-      background: #111;
-      color: #fff;
-    }
-    .cta:focus, .cta:hover { opacity: .92; }
-    .note {
-      margin-top: 18px;
-      padding: 14px 16px;
-      border-radius: 12px;
-      background: #f1f3f5;
-      font-size: 14px;
-      color: #333;
-    }
-    .footer {
-      margin-top: 14px;
-      font-size: 12px;
-      color: #666;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is InstaDoodle?</title>
+<meta name="description" content="Informational overview of InstaDoodle features and who it is designed for.">
+<style>
+:root{
+  --bg:#0f1220;
+  --card:#ffffff;
+  --accent:#6c7bff;
+  --soft:#f3f4ff;
+}
+body{
+  margin:0;
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#0f1220,#1c2140);
+  color:#111;
+}
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:48px 16px;
+}
+.hero{
+  background:linear-gradient(135deg,#6c7bff,#8f9bff);
+  border-radius:22px;
+  padding:48px 32px;
+  color:#fff;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+.hero h1{
+  margin:0 0 12px;
+  font-size:38px;
+}
+.hero p{
+  max-width:720px;
+  font-size:18px;
+  opacity:.95;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  margin-top:36px;
+}
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:26px 24px;
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+.card h2{
+  margin-top:0;
+  font-size:22px;
+}
+.card ul{
+  padding-left:18px;
+}
+.card li{
+  margin-bottom:8px;
+}
+.cta-box{
+  margin-top:42px;
+  background:var(--soft);
+  border-radius:22px;
+  padding:36px;
+  text-align:center;
+}
+.cta-box a{
+  display:inline-block;
+  margin-top:16px;
+  padding:16px 28px;
+  border-radius:16px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+}
+.cta-box a:hover{opacity:.9}
+.disclaimer{
+  margin-top:32px;
+  font-size:14px;
+  color:#444;
+  line-height:1.5;
+}
+footer{
+  margin-top:36px;
+  text-align:center;
+  font-size:12px;
+  color:#aaa;
+}
+</style>
 </head>
 
 <body>
-  <div class="wrap">
+<div class="container">
+
+  <section class="hero">
+    <h1>What Is InstaDoodle?</h1>
+    <p>
+      InstaDoodle is an AI-powered doodle and whiteboard animation software designed to help
+      marketers, educators, and content creators build explainer-style videos without advanced
+      design or technical skills.
+    </p>
+  </section>
+
+  <section class="grid">
     <div class="card">
-      <h1>What Is InstaDoodle?</h1>
-
-      <p>
-        InstaDoodle is an AI-powered doodle and whiteboard animation software developed to help marketers,
-        educators, and content creators create explainer-style videos without advanced technical or design skills.
-      </p>
-
-      <p>
-        The platform uses text-based prompts to generate animated videos, removing the need for manual animation
-        or complex editing processes.
-      </p>
-
       <h2>Main Features</h2>
       <ul>
-        <li>AI-powered whiteboard and doodle video creation</li>
-        <li>Multiple animation styles and background options</li>
+        <li>AI-powered whiteboard and doodle animations</li>
+        <li>Multiple animation styles and backgrounds</li>
         <li>Text-to-video automation</li>
         <li>Unlimited video projects</li>
-        <li>No prior design or animation experience required</li>
+        <li>No design experience required</li>
       </ul>
+    </div>
 
-      <h2>Who Is InstaDoodle Designed For?</h2>
+    <div class="card">
+      <h2>Who Is It For?</h2>
       <ul>
         <li>Affiliate marketers</li>
         <li>Digital product creators</li>
@@ -88,35 +127,39 @@
         <li>Agencies and freelancers</li>
         <li>YouTubers and content creators</li>
       </ul>
+    </div>
 
+    <div class="card">
       <h2>General Overview</h2>
       <p>
-        InstaDoodle is positioned as a tool for users who want to create presentation, explainer, or demonstration
-        videos without hiring designers or learning complex animation software.
+        InstaDoodle is positioned as a practical option for users who want to create explainer,
+        presentation, or demonstration videos without hiring designers or learning complex
+        animation software.
       </p>
-
-      <a
-        class="cta"
-        href="https://74d2b4s3fm741u06-n56h8z-wd.hop.clickbank.net"
-        target="_blank"
-        rel="noopener noreferrer sponsored"
-      >
-        Learn more on the official InstaDoodle website
-      </a>
-
-      <div class="note">
-        <strong>Disclaimer:</strong> This page is for informational purposes only and is not the official InstaDoodle
-        website. Some links on this page may be affiliate links.
-      </div>
-
-      <div class="footer">
-        © <span id="y"></span> Informational page.
-      </div>
     </div>
+  </section>
+
+  <section class="cta-box">
+    <h2>Learn More</h2>
+    <p>Access the official InstaDoodle website for full details.</p>
+    <a href="https://74d2b4s3fm741u06-n56h8z-wd.hop.clickbank.net" target="_blank" rel="noopener noreferrer sponsored">
+      Visit Official InstaDoodle Website
+    </a>
+  </section>
+
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> This page is for informational purposes only and is not the official
+    InstaDoodle website. Some links on this page may be affiliate links.
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <footer>
+    © <span id="y"></span> Informational Page
+  </footer>
+
+</div>
+
+<script>
+document.getElementById("y").textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
